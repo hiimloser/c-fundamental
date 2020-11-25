@@ -4,7 +4,7 @@ int main() {
 	int size=0;
 	printf("Nhap so phan tu cua mang=");
 	scanf("%d", &size);
-	
+	int temp=a[0];
 	int a[size];
 	for(int i=0;i<size;i++) {
 		printf("a[%d]=", i);
@@ -19,9 +19,12 @@ int main() {
 	}
 	
 	for(int i=0;i<size;i++){
-        if(a[i]>a[i+1]){
+             if(temp>a[i]){
+		    temp=a[i];
+	     }	
           
-    }
+        }
+		printf("Gia tri lon nhat = %d",temp)
 
 	return 0;
 }
